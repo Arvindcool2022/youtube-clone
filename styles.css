@@ -1,0 +1,17 @@
+:root{
+    --color-1: hsl(0, 0%, 6%);
+    --color-2: hsl(0, 0%, 15%);
+    --color-3: hsl(0, 0%, 58%);
+    --color-4: hsl(0, 99%, 36%);
+    --color-5: hsl(0, 100%, 50%);
+    --color-6: hsl(213, 74%, 40%);
+    --color-7: hsl(0, 0%, 100%);
+    /* heading-16px, normal-12px, sub line-9px */
+
+    --font-xlg: 1.125rem;
+    --font-lg: 1rem;
+    --font-med: 0.75rem;
+    --font-small: 0.5625rem;
+
+}
+
