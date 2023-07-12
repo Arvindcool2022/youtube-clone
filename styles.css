@@ -1,13 +1,13 @@
 :root{
-    --color-1: hsl(0, 0%, 6%);
-    --color-2: hsl(0, 0%, 15%);
-    --color-3: hsla(0, 0%, 58%);
-    --color-4: hsl(0, 99%, 36%);
-    --color-5: hsl(0, 100%, 50%);
-    --color-6: hsl(213, 74%, 40%);
-    --color-7: hsl(0, 0%, 100%);
+    --color-primary: hsl(0, 0%, 6%);
+    --color-secondary: hsl(0, 0%, 15%);
+    --color-tertiary: hsla(0, 0%, 58%);
+    --color-accent-primary: hsl(0, 100%, 50%);
+    --color-accent-secondary: hsl(213, 74%, 40%);
+    --color-accent-tertiary: hsl(0, 99%, 36%);
+    --color-font-primary: hsl(0, 0%, 100%);
     --color-hover: hsla(0, 0%, 58%, 0.3);
-
+    
     /* heading-16px, normal-12px, sub line-9px */
 
     --font-xlg: 1.125rem;
@@ -26,8 +26,8 @@
 body {
     font-family: Roboto, Arial, sans-serif;
     font-size: var(--font-lg);
-    background-color: var(--color-1);
-    color: var(--color-7);
+    background-color: var(--color-primary);
+    color: var(--color-font-primary);
 }
 
 li{
@@ -37,7 +37,7 @@ li{
 .icon {
     height: var(--font-lg);
     width: var(--font-lg);
-    fill: var(--color-7);
+    fill: var(--color-font-primary);
     
   }
 
@@ -55,17 +55,16 @@ li{
 }
 
 .icon-container--grey {
-    background-color: var(--color-3);
+    background-color: var(--color-tertiary);
 }
 
 header {
     padding: 0.5rem 1rem;
-    border: 1px solid lime;
+    border: 1px solid steelblue;
 }
 
 .header-nav {
     display: flex;
-    gap: 2rem
 }
 
 .header-nav__left {
@@ -85,20 +84,17 @@ header {
 }
 
 .header-nav__logo-text {
-    /* font-size: var(--font-xlg);
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif; */
     font:700 var(--font-xlg) 'Poppins',sans-serif ;
 }
 
 .header-nav__middle {
     display: flex;
     gap: 1rem;
-    flex-grow: 1;
+    flex-grow: 2;
 }
 .header-nav__search-container {
-    border: 1px solid var(--color-3);
-    flex-grow: 1;
+    border: 1px solid var(--color-tertiary);
+    flex-grow: 2;
     flex-shrink: 1;
     display: flex;
     align-items: center;
@@ -118,7 +114,7 @@ header {
     border: 0;
     border-radius: 100px;
     outline: 0;
-    flex-grow: 1;
+    flex-grow: 2;
     flex-shrink: 1;
 }
 
@@ -130,5 +126,12 @@ header {
 .header-nav__right {
     display: flex;
     gap: 1rem;
-    margin-left: ;
 }
+
+.margin {
+    /* cant add dynamic margin in top nav-bar as in the actual site. So, did a improv */
+    min-width: 2rem;
+    flex-grow: 1;
+}
+
+
