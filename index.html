@@ -4,11 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Youtube Clone</title>
 </head>
 <body>
-    
+     <header>
+        <nav class="header-nav">
+            <ul class="header-nav__left">
+                <li class="header-nav__items">
+                    <span class="icon-container">
+                        <svg class="icon">
+                            <use xlink:href="images/sprite.svg#menu"></use>
+                        </svg>
+                    </span>
+                </li>
+                 <li class="header-nav__items header-nav__items--flex">
+                     <img class="header-nav__image" src="images/favicon.ico" alt="Youtbe logo"> 
+                    <p class="header-nav__logo-text">Premium</p>
+                </li>
+            </ul>
+            <ul class="header-nav__middle">
+                <li class="header-nav__items header-nav__search-container">
+                    <input class="search"type="search" placeholder="Search">
+                    <span class="icon-container icon-container--grey" class="header-nav__search-button">
+                        <svg class="icon">
+                            <use xlink:href="images/sprite.svg#search"></use>
+                        </svg>
+                    </span>
+                </li>
+                <li class="header-nav__items">
+                    <span class="icon-container icon-container--grey">
+                        <svg class="icon">
+                            <use xlink:href="images/sprite.svg#microphone"></use>
+                        </svg>
+                    </span>
+                </li>
+            </ul>
+            <ul class="header-nav__right">
+                <li class="header-nav__items">
+                    <span class="icon-container">
+                        <svg class="icon">
+                            <use xlink:href="images/sprite.svg#video-camera"></use>
+                        </svg>
+                    </span>
+                </li>
+                <li class="header-nav__items">
+                    <span class="icon-container">
+                        <svg class="icon">
+                            <use xlink:href="images/sprite.svg#notification-bell"></use>
+                        </svg>
+                    </span>
+                </li>
+
+                <li class="header-nav__items">
+                    <span class="icon-container icon-container--grey">
+                        <img class="header-nav__image" src="images/user.png" alt="profile picture">
+                    </span>
+                </li>
+            </ul>
+        </nav>
+     </header>
     
 </body>
 <script src="main.js"></script>
