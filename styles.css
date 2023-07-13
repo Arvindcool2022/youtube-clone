@@ -7,7 +7,7 @@
     --color-accent-tertiary: hsl(0, 99%, 36%);
     --color-font-primary: hsl(0, 0%, 100%);
     --color-hover: hsla(0, 0%, 58%, 0.3);
-    
+
     /* heading-16px, normal-12px, sub line-9px */
 
     --font-xlg: 1.125rem;
@@ -41,7 +41,7 @@ li{
     height: var(--font-lg);
     width: var(--font-lg);
     fill: var(--color-font-primary);
-    
+
   }
 
 .icon-container {
@@ -64,7 +64,7 @@ li{
 
 .card{
     /* border: 1px solid skyblue; */
-    margin: 3rem;
+    /* margin: 3rem; */
     width: 360px;
     height: 303px;
     position: relative;
@@ -131,7 +131,7 @@ li{
 
 header {
     padding: 0.5rem 1rem;
-    border: 1px solid steelblue;
+    /* border: 1px solid steelblue; */
 }
 
 .header-nav {
@@ -203,6 +203,16 @@ header {
     /* cant add dynamic margin in top nav-bar as in the actual site. So, did a improv */
     min-width: 2rem;
     flex-grow: 1;
+}
+
+/* grid for video gallery */
+
+.gallery {
+    display: grid;
+    padding-top: 2rem;
+    grid-gap: 2rem 1rem;
+    grid-template-columns:repeat(auto-fit,360px);
+    justify-content: center;
 }
 
 
