@@ -3,23 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <!-- bs-5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <!-- my styles  -->
     <link rel="stylesheet" href="styles.css">
+
     <title>Youtube Clone</title>
 </head>
 <body>
      <header>
         <nav class="header-nav">
-            <ul class="header-nav__left">
+            <ul class="header-nav__left ps-0">
                 <li class="header-nav__items">
-                    <span class="icon-container">
+                    <a href="#side-nav" class="icon-container" data-bs-toggle="offcanvas" role="button" aria-controls="side-nav">
                         <svg class="icon">
                             <use xlink:href="images/sprite.svg#menu"></use>
                         </svg>
-                    </span>
+                    </a>
                 </li>
                  <li class="header-nav__items header-nav__items--flex">
                      <img class="header-nav__image" src="images/favicon.ico" alt="Youtbe logo"> 
@@ -72,6 +80,34 @@
             </ul>
         </nav>
      </header>
+
+
+     <!-- canvas -->
+
+     <nav class="offcanvas offcanvas-start bg-black text-bg-dark" tabindex="-1" id="side-nav" aria-labelledby="side-nav-content">
+
+        <div class="offcanvas-header">
+            <ul class="header-nav__left ps-0">
+                <li class="header-nav__items">
+                    <a href="#side-nav" class="icon-container" data-bs-toggle="offcanvas" role="button" aria-controls="side-nav">
+                        <svg class="icon">
+                            <use xlink:href="images/sprite.svg#menu"></use>
+                        </svg>
+                    </a>
+                </li>
+                 <li class="header-nav__items header-nav__items--flex">
+                     <img class="header-nav__image" src="images/favicon.ico" alt="Youtbe logo"> 
+                    <p class="header-nav__logo-text">Premium</p>
+                </li>
+            </ul>
+        </div>
+
+        
+
+     </nav>
+
+     <!-- badges -->
+
      <aside class="genre">
         <menu class="genre__container">
             <li class="genre__items">all</li>
@@ -84,347 +120,349 @@
         </menu>
     </aside>
 
-     <section class="gallery">
-        <figure class="card">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="card__image">
-            <figcaption class="card__detail">
-                <div class="card__avatar">
-                    <img src="images/user-white.png" alt="" class="card__icon">
-                </div>
-                <div class="card__text">
-                    <div class="card__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-                    <div class="card__channel">Lorem, ipsum.</div>
-                    <div class="card__stats">36k views . 2 years ago</div>
-                </div>
-            </figcaption>
-        </figure>
-        <figure class="card">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="card__image">
-            <figcaption class="card__detail">
-                <div class="card__avatar">
-                    <img src="images/user-white.png" alt="" class="card__icon">
-                </div>
-                <div class="card__text">
-                    <div class="card__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-                    <div class="card__channel">Lorem, ipsum.</div>
-                    <div class="card__stats">36k views . 2 years ago</div>
-                </div>
-            </figcaption>
-        </figure>
-        <figure class="card">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="card__image">
-            <figcaption class="card__detail">
-                <div class="card__avatar">
-                    <img src="images/user-white.png" alt="" class="card__icon">
-                </div>
-                <div class="card__text">
-                    <div class="card__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-                    <div class="card__channel">Lorem, ipsum.</div>
-                    <div class="card__stats">36k views . 2 years ago</div>
-                </div>
-            </figcaption>
-        </figure>
-        <figure class="card">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="card__image">
-            <figcaption class="card__detail">
-                <div class="card__avatar">
-                    <img src="images/user-white.png" alt="" class="card__icon">
-                </div>
-                <div class="card__text">
-                    <div class="card__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-                    <div class="card__channel">Lorem, ipsum.</div>
-                    <div class="card__stats">36k views . 2 years ago</div>
-                </div>
-            </figcaption>
-        </figure>
-        <figure class="card">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="card__image">
-            <figcaption class="card__detail">
-                <div class="card__avatar">
-                    <img src="images/user-white.png" alt="" class="card__icon">
-                </div>
-                <div class="card__text">
-                    <div class="card__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-                    <div class="card__channel">Lorem, ipsum.</div>
-                    <div class="card__stats">36k views . 2 years ago</div>
-                </div>
-            </figcaption>
-        </figure>
-        <figure class="card">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="card__image">
-            <figcaption class="card__detail">
-                <div class="card__avatar">
-                    <img src="images/user-white.png" alt="" class="card__icon">
-                </div>
-                <div class="card__text">
-                    <div class="card__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-                    <div class="card__channel">Lorem, ipsum.</div>
-                    <div class="card__stats">36k views . 2 years ago</div>
-                </div>
-            </figcaption>
-        </figure>
-        <figure class="card">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="card__image">
-            <figcaption class="card__detail">
-                <div class="card__avatar">
-                    <img src="images/user-white.png" alt="" class="card__icon">
-                </div>
-                <div class="card__text">
-                    <div class="card__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-                    <div class="card__channel">Lorem, ipsum.</div>
-                    <div class="card__stats">36k views . 2 years ago</div>
-                </div>
-            </figcaption>
-        </figure>
-        <figure class="card">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="card__image">
-            <figcaption class="card__detail">
-                <div class="card__avatar">
-                    <img src="images/user-white.png" alt="" class="card__icon">
-                </div>
-                <div class="card__text">
-                    <div class="card__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-                    <div class="card__channel">Lorem, ipsum.</div>
-                    <div class="card__stats">36k views . 2 years ago</div>
-                </div>
-            </figcaption>
-        </figure>
-        <figure class="card">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="card__image">
-            <figcaption class="card__detail">
-                <div class="card__avatar">
-                    <img src="images/user-white.png" alt="" class="card__icon">
-                </div>
-                <div class="card__text">
-                    <div class="card__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-                    <div class="card__channel">Lorem, ipsum.</div>
-                    <div class="card__stats">36k views . 2 years ago</div>
-                </div>
-            </figcaption>
-        </figure>
-        <figure class="card">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="card__image">
-            <figcaption class="card__detail">
-                <div class="card__avatar">
-                    <img src="images/user-white.png" alt="" class="card__icon">
-                </div>
-                <div class="card__text">
-                    <div class="card__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-                    <div class="card__channel">Lorem, ipsum.</div>
-                    <div class="card__stats">36k views . 2 years ago</div>
-                </div>
-            </figcaption>
-        </figure>
-        <figure class="card">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="card__image">
-            <figcaption class="card__detail">
-                <div class="card__avatar">
-                    <img src="images/user-white.png" alt="" class="card__icon">
-                </div>
-                <div class="card__text">
-                    <div class="card__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-                    <div class="card__channel">Lorem, ipsum.</div>
-                    <div class="card__stats">36k views . 2 years ago</div>
-                </div>
-            </figcaption>
-        </figure>
-        <figure class="card">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="card__image">
-            <figcaption class="card__detail">
-                <div class="card__avatar">
-                    <img src="images/user-white.png" alt="" class="card__icon">
-                </div>
-                <div class="card__text">
-                    <div class="card__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-                    <div class="card__channel">Lorem, ipsum.</div>
-                    <div class="card__stats">36k views . 2 years ago</div>
-                </div>
-            </figcaption>
-        </figure>
-        <figure class="card">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="card__image">
-            <figcaption class="card__detail">
-                <div class="card__avatar">
-                    <img src="images/user-white.png" alt="" class="card__icon">
-                </div>
-                <div class="card__text">
-                    <div class="card__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-                    <div class="card__channel">Lorem, ipsum.</div>
-                    <div class="card__stats">36k views . 2 years ago</div>
-                </div>
-            </figcaption>
-        </figure>
-        <figure class="card">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="card__image">
-            <figcaption class="card__detail">
-                <div class="card__avatar">
-                    <img src="images/user-white.png" alt="" class="card__icon">
-                </div>
-                <div class="card__text">
-                    <div class="card__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-                    <div class="card__channel">Lorem, ipsum.</div>
-                    <div class="card__stats">36k views . 2 years ago</div>
-                </div>
-            </figcaption>
-        </figure>
-        <figure class="card">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="card__image">
-            <figcaption class="card__detail">
-                <div class="card__avatar">
-                    <img src="images/user-white.png" alt="" class="card__icon">
-                </div>
-                <div class="card__text">
-                    <div class="card__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-                    <div class="card__channel">Lorem, ipsum.</div>
-                    <div class="card__stats">36k views . 2 years ago</div>
-                </div>
-            </figcaption>
-        </figure>
-        <figure class="card">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="card__image">
-            <figcaption class="card__detail">
-                <div class="card__avatar">
-                    <img src="images/user-white.png" alt="" class="card__icon">
-                </div>
-                <div class="card__text">
-                    <div class="card__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-                    <div class="card__channel">Lorem, ipsum.</div>
-                    <div class="card__stats">36k views . 2 years ago</div>
-                </div>
-            </figcaption>
-        </figure>
-        <figure class="card">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="card__image">
-            <figcaption class="card__detail">
-                <div class="card__avatar">
-                    <img src="images/user-white.png" alt="" class="card__icon">
-                </div>
-                <div class="card__text">
-                    <div class="card__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-                    <div class="card__channel">Lorem, ipsum.</div>
-                    <div class="card__stats">36k views . 2 years ago</div>
-                </div>
-            </figcaption>
-        </figure>
-        <figure class="card">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="card__image">
-            <figcaption class="card__detail">
-                <div class="card__avatar">
-                    <img src="images/user-white.png" alt="" class="card__icon">
-                </div>
-                <div class="card__text">
-                    <div class="card__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-                    <div class="card__channel">Lorem, ipsum.</div>
-                    <div class="card__stats">36k views . 2 years ago</div>
-                </div>
-            </figcaption>
-        </figure>
-        <figure class="card">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="card__image">
-            <figcaption class="card__detail">
-                <div class="card__avatar">
-                    <img src="images/user-white.png" alt="" class="card__icon">
-                </div>
-                <div class="card__text">
-                    <div class="card__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-                    <div class="card__channel">Lorem, ipsum.</div>
-                    <div class="card__stats">36k views . 2 years ago</div>
-                </div>
-            </figcaption>
-        </figure>
-        <figure class="card">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="card__image">
-            <figcaption class="card__detail">
-                <div class="card__avatar">
-                    <img src="images/user-white.png" alt="" class="card__icon">
-                </div>
-                <div class="card__text">
-                    <div class="card__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-                    <div class="card__channel">Lorem, ipsum.</div>
-                    <div class="card__stats">36k views . 2 years ago</div>
-                </div>
-            </figcaption>
-        </figure>
-        <figure class="card">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="card__image">
-            <figcaption class="card__detail">
-                <div class="card__avatar">
-                    <img src="images/user-white.png" alt="" class="card__icon">
-                </div>
-                <div class="card__text">
-                    <div class="card__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-                    <div class="card__channel">Lorem, ipsum.</div>
-                    <div class="card__stats">36k views . 2 years ago</div>
-                </div>
-            </figcaption>
-        </figure>
-        <figure class="card">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="card__image">
-            <figcaption class="card__detail">
-                <div class="card__avatar">
-                    <img src="images/user-white.png" alt="" class="card__icon">
-                </div>
-                <div class="card__text">
-                    <div class="card__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-                    <div class="card__channel">Lorem, ipsum.</div>
-                    <div class="card__stats">36k views . 2 years ago</div>
-                </div>
-            </figcaption>
-        </figure>
-        <figure class="card">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="card__image">
-            <figcaption class="card__detail">
-                <div class="card__avatar">
-                    <img src="images/user-white.png" alt="" class="card__icon">
-                </div>
-                <div class="card__text">
-                    <div class="card__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-                    <div class="card__channel">Lorem, ipsum.</div>
-                    <div class="card__stats">36k views . 2 years ago</div>
-                </div>
-            </figcaption>
-        </figure>
-        <figure class="card">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="card__image">
-            <figcaption class="card__detail">
-                <div class="card__avatar">
-                    <img src="images/user-white.png" alt="" class="card__icon">
-                </div>
-                <div class="card__text">
-                    <div class="card__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-                    <div class="card__channel">Lorem, ipsum.</div>
-                    <div class="card__stats">36k views . 2 years ago</div>
-                </div>
-            </figcaption>
-        </figure>
-        <figure class="card">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="card__image">
-            <figcaption class="card__detail">
-                <div class="card__avatar">
-                    <img src="images/user-white.png" alt="" class="card__icon">
-                </div>
-                <div class="card__text">
-                    <div class="card__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-                    <div class="card__channel">Lorem, ipsum.</div>
-                    <div class="card__stats">36k views . 2 years ago</div>
-                </div>
-            </figcaption>
-        </figure>
-        <figure class="card">
-            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="card__image">
-            <figcaption class="card__detail">
-                <div class="card__avatar">
-                    <img src="images/user-white.png" alt="" class="card__icon">
-                </div>
-                <div class="card__text">
-                    <div class="card__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
-                    <div class="card__channel">Lorem, ipsum.</div>
-                    <div class="card__stats">36k views . 2 years ago</div>
-                </div>
-            </figcaption>
-        </figure>
+    <!-- card gallery -->
 
-     </section>
+    <section class="gallery">
+    <figure class="crd">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="crd__image">
+        <figcaption class="crd__detail">
+            <div class="crd__avatar">
+                <img src="images/user-white.png" alt="" class="crd__icon">
+            </div>
+            <div class="crd__text">
+                <div class="crd__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
+                <div class="crd__channel">Lorem, ipsum.</div>
+                <div class="crd__stats">36k views . 2 years ago</div>
+            </div>
+        </figcaption>
+    </figure>
+    <figure class="crd">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="crd__image">
+        <figcaption class="crd__detail">
+            <div class="crd__avatar">
+                <img src="images/user-white.png" alt="" class="crd__icon">
+            </div>
+            <div class="crd__text">
+                <div class="crd__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
+                <div class="crd__channel">Lorem, ipsum.</div>
+                <div class="crd__stats">36k views . 2 years ago</div>
+            </div>
+        </figcaption>
+    </figure>
+    <figure class="crd">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="crd__image">
+        <figcaption class="crd__detail">
+            <div class="crd__avatar">
+                <img src="images/user-white.png" alt="" class="crd__icon">
+            </div>
+            <div class="crd__text">
+                <div class="crd__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
+                <div class="crd__channel">Lorem, ipsum.</div>
+                <div class="crd__stats">36k views . 2 years ago</div>
+            </div>
+        </figcaption>
+    </figure>
+    <figure class="crd">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="crd__image">
+        <figcaption class="crd__detail">
+            <div class="crd__avatar">
+                <img src="images/user-white.png" alt="" class="crd__icon">
+            </div>
+            <div class="crd__text">
+                <div class="crd__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
+                <div class="crd__channel">Lorem, ipsum.</div>
+                <div class="crd__stats">36k views . 2 years ago</div>
+            </div>
+        </figcaption>
+    </figure>
+    <figure class="crd">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="crd__image">
+        <figcaption class="crd__detail">
+            <div class="crd__avatar">
+                <img src="images/user-white.png" alt="" class="crd__icon">
+            </div>
+            <div class="crd__text">
+                <div class="crd__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
+                <div class="crd__channel">Lorem, ipsum.</div>
+                <div class="crd__stats">36k views . 2 years ago</div>
+            </div>
+        </figcaption>
+    </figure>
+    <figure class="crd">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="crd__image">
+        <figcaption class="crd__detail">
+            <div class="crd__avatar">
+                <img src="images/user-white.png" alt="" class="crd__icon">
+            </div>
+            <div class="crd__text">
+                <div class="crd__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
+                <div class="crd__channel">Lorem, ipsum.</div>
+                <div class="crd__stats">36k views . 2 years ago</div>
+            </div>
+        </figcaption>
+    </figure>
+    <figure class="crd">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="crd__image">
+        <figcaption class="crd__detail">
+            <div class="crd__avatar">
+                <img src="images/user-white.png" alt="" class="crd__icon">
+            </div>
+            <div class="crd__text">
+                <div class="crd__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
+                <div class="crd__channel">Lorem, ipsum.</div>
+                <div class="crd__stats">36k views . 2 years ago</div>
+            </div>
+        </figcaption>
+    </figure>
+    <figure class="crd">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="crd__image">
+        <figcaption class="crd__detail">
+            <div class="crd__avatar">
+                <img src="images/user-white.png" alt="" class="crd__icon">
+            </div>
+            <div class="crd__text">
+                <div class="crd__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
+                <div class="crd__channel">Lorem, ipsum.</div>
+                <div class="crd__stats">36k views . 2 years ago</div>
+            </div>
+        </figcaption>
+    </figure>
+    <figure class="crd">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="crd__image">
+        <figcaption class="crd__detail">
+            <div class="crd__avatar">
+                <img src="images/user-white.png" alt="" class="crd__icon">
+            </div>
+            <div class="crd__text">
+                <div class="crd__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
+                <div class="crd__channel">Lorem, ipsum.</div>
+                <div class="crd__stats">36k views . 2 years ago</div>
+            </div>
+        </figcaption>
+    </figure>
+    <figure class="crd">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="crd__image">
+        <figcaption class="crd__detail">
+            <div class="crd__avatar">
+                <img src="images/user-white.png" alt="" class="crd__icon">
+            </div>
+            <div class="crd__text">
+                <div class="crd__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
+                <div class="crd__channel">Lorem, ipsum.</div>
+                <div class="crd__stats">36k views . 2 years ago</div>
+            </div>
+        </figcaption>
+    </figure>
+    <figure class="crd">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="crd__image">
+        <figcaption class="crd__detail">
+            <div class="crd__avatar">
+                <img src="images/user-white.png" alt="" class="crd__icon">
+            </div>
+            <div class="crd__text">
+                <div class="crd__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
+                <div class="crd__channel">Lorem, ipsum.</div>
+                <div class="crd__stats">36k views . 2 years ago</div>
+            </div>
+        </figcaption>
+    </figure>
+    <figure class="crd">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="crd__image">
+        <figcaption class="crd__detail">
+            <div class="crd__avatar">
+                <img src="images/user-white.png" alt="" class="crd__icon">
+            </div>
+            <div class="crd__text">
+                <div class="crd__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
+                <div class="crd__channel">Lorem, ipsum.</div>
+                <div class="crd__stats">36k views . 2 years ago</div>
+            </div>
+        </figcaption>
+    </figure>
+    <figure class="crd">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="crd__image">
+        <figcaption class="crd__detail">
+            <div class="crd__avatar">
+                <img src="images/user-white.png" alt="" class="crd__icon">
+            </div>
+            <div class="crd__text">
+                <div class="crd__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
+                <div class="crd__channel">Lorem, ipsum.</div>
+                <div class="crd__stats">36k views . 2 years ago</div>
+            </div>
+        </figcaption>
+    </figure>
+    <figure class="crd">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="crd__image">
+        <figcaption class="crd__detail">
+            <div class="crd__avatar">
+                <img src="images/user-white.png" alt="" class="crd__icon">
+            </div>
+            <div class="crd__text">
+                <div class="crd__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
+                <div class="crd__channel">Lorem, ipsum.</div>
+                <div class="crd__stats">36k views . 2 years ago</div>
+            </div>
+        </figcaption>
+    </figure>
+    <figure class="crd">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="crd__image">
+        <figcaption class="crd__detail">
+            <div class="crd__avatar">
+                <img src="images/user-white.png" alt="" class="crd__icon">
+            </div>
+            <div class="crd__text">
+                <div class="crd__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
+                <div class="crd__channel">Lorem, ipsum.</div>
+                <div class="crd__stats">36k views . 2 years ago</div>
+            </div>
+        </figcaption>
+    </figure>
+    <figure class="crd">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="crd__image">
+        <figcaption class="crd__detail">
+            <div class="crd__avatar">
+                <img src="images/user-white.png" alt="" class="crd__icon">
+            </div>
+            <div class="crd__text">
+                <div class="crd__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
+                <div class="crd__channel">Lorem, ipsum.</div>
+                <div class="crd__stats">36k views . 2 years ago</div>
+            </div>
+        </figcaption>
+    </figure>
+    <figure class="crd">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="crd__image">
+        <figcaption class="crd__detail">
+            <div class="crd__avatar">
+                <img src="images/user-white.png" alt="" class="crd__icon">
+            </div>
+            <div class="crd__text">
+                <div class="crd__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
+                <div class="crd__channel">Lorem, ipsum.</div>
+                <div class="crd__stats">36k views . 2 years ago</div>
+            </div>
+        </figcaption>
+    </figure>
+    <figure class="crd">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="crd__image">
+        <figcaption class="crd__detail">
+            <div class="crd__avatar">
+                <img src="images/user-white.png" alt="" class="crd__icon">
+            </div>
+            <div class="crd__text">
+                <div class="crd__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
+                <div class="crd__channel">Lorem, ipsum.</div>
+                <div class="crd__stats">36k views . 2 years ago</div>
+            </div>
+        </figcaption>
+    </figure>
+    <figure class="crd">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="crd__image">
+        <figcaption class="crd__detail">
+            <div class="crd__avatar">
+                <img src="images/user-white.png" alt="" class="crd__icon">
+            </div>
+            <div class="crd__text">
+                <div class="crd__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
+                <div class="crd__channel">Lorem, ipsum.</div>
+                <div class="crd__stats">36k views . 2 years ago</div>
+            </div>
+        </figcaption>
+    </figure>
+    <figure class="crd">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="crd__image">
+        <figcaption class="crd__detail">
+            <div class="crd__avatar">
+                <img src="images/user-white.png" alt="" class="crd__icon">
+            </div>
+            <div class="crd__text">
+                <div class="crd__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
+                <div class="crd__channel">Lorem, ipsum.</div>
+                <div class="crd__stats">36k views . 2 years ago</div>
+            </div>
+        </figcaption>
+    </figure>
+    <figure class="crd">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="crd__image">
+        <figcaption class="crd__detail">
+            <div class="crd__avatar">
+                <img src="images/user-white.png" alt="" class="crd__icon">
+            </div>
+            <div class="crd__text">
+                <div class="crd__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
+                <div class="crd__channel">Lorem, ipsum.</div>
+                <div class="crd__stats">36k views . 2 years ago</div>
+            </div>
+        </figcaption>
+    </figure>
+    <figure class="crd">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="crd__image">
+        <figcaption class="crd__detail">
+            <div class="crd__avatar">
+                <img src="images/user-white.png" alt="" class="crd__icon">
+            </div>
+            <div class="crd__text">
+                <div class="crd__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
+                <div class="crd__channel">Lorem, ipsum.</div>
+                <div class="crd__stats">36k views . 2 years ago</div>
+            </div>
+        </figcaption>
+    </figure>
+    <figure class="crd">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="crd__image">
+        <figcaption class="crd__detail">
+            <div class="crd__avatar">
+                <img src="images/user-white.png" alt="" class="crd__icon">
+            </div>
+            <div class="crd__text">
+                <div class="crd__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
+                <div class="crd__channel">Lorem, ipsum.</div>
+                <div class="crd__stats">36k views . 2 years ago</div>
+            </div>
+        </figcaption>
+    </figure>
+    <figure class="crd">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="crd__image">
+        <figcaption class="crd__detail">
+            <div class="crd__avatar">
+                <img src="images/user-white.png" alt="" class="crd__icon">
+            </div>
+            <div class="crd__text">
+                <div class="crd__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
+                <div class="crd__channel">Lorem, ipsum.</div>
+                <div class="crd__stats">36k views . 2 years ago</div>
+            </div>
+        </figcaption>
+    </figure>
+    <figure class="crd">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="crd__image">
+        <figcaption class="crd__detail">
+            <div class="crd__avatar">
+                <img src="images/user-white.png" alt="" class="crd__icon">
+            </div>
+            <div class="crd__text">
+                <div class="crd__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
+                <div class="crd__channel">Lorem, ipsum.</div>
+                <div class="crd__stats">36k views . 2 years ago</div>
+            </div>
+        </figcaption>
+    </figure>
+    <figure class="crd">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="" class="crd__image">
+        <figcaption class="crd__detail">
+            <div class="crd__avatar">
+                <img src="images/user-white.png" alt="" class="crd__icon">
+            </div>
+            <div class="crd__text">
+                <div class="crd__heading">Lorem ipsum, dolor sit amet consectetur adipisicing.</div>
+                <div class="crd__channel">Lorem, ipsum.</div>
+                <div class="crd__stats">36k views . 2 years ago</div>
+            </div>
+        </figcaption>
+    </figure>
+
+    </section>
     
 </body>
 <script src="main.js"></script>
