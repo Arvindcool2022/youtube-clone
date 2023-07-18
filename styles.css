@@ -63,7 +63,7 @@ li{
 /* crds */
 
 .crd{
-    /* border: 1px solid skyblue; */
+    /* border: 1px solid rgb(17, 180, 85); */
     /* margin: 3rem; */
     width: 360px;
     height: 303px;
@@ -84,7 +84,7 @@ li{
     border-radius: 0;
 }
 
-.crd::after{
+.card::after{
     content: "48:02";
     background-color: rgb(12, 12, 12);
     position: absolute;
